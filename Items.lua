@@ -42,7 +42,10 @@ Private.Items = {
 		51560, -- Runed Band of the Kirin Tor
 		95050, -- Brassiest Knuckle (Horde)
 		95051, -- Brassiest Knuckle (Alliance)
-        139599, -- Empowered Ring of the Kirin Tor
+		118907, -- Pit Fighter's Punching Ring
+		142469, -- Violet Seal of the Grand Magus
+		166560, -- Captain's Signet of Command
+		139599, -- Empowered Ring of the Kirin Tor
 	},
 	[INVTYPE_FEET] = {
 		28585, -- Ruby Slippers
