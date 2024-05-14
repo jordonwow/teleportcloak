@@ -16,6 +16,17 @@ function TeleportCloak:Print(...)
     print("|cff33ff99TeleportCloak:|r ", ...)
 end
 
+local InventorySlots = {
+    INVSLOT_NECK,
+    INVSLOT_FEET,
+    INVSLOT_FINGER1,
+    INVSLOT_FINGER2,
+    INVSLOT_TRINKET1,
+    INVSLOT_TRINKET2,
+    INVSLOT_BACK,
+    INVSLOT_TABARD,
+}
+
 local InventoryTypes = {
     cloaks = INVTYPE_CLOAK,
     feet = INVTYPE_FEET,
@@ -45,6 +56,21 @@ function TeleportCloak:Command(msg)
             end
         end
         return
+    elseif cmd == "save" then
+        local count = 0
+        for _, slot in pairs(InventorySlots) do
+            local itemId = GetInventoryItemID("player", slot)
+            if itemId and self:IsTeleportItem(itemId) then
+                self.db.saved[slot] = itemId
+                self:Print(select(2, GetItemInfo(itemId)), "saved.")
+                count = count + 1
+            end
+        end
+        if count == 0 then
+            self:Print("No teleport items equipped.")
+        end
+        return
+
     elseif cmd == "warnings" then
         self.db.warnings = not self.db.warnings
     else
@@ -61,7 +87,8 @@ function TeleportCloak:Command(msg)
             types = types.." |cff80ffc0"..inventoryType.."|r,"
         end
         self:Print(types, "and will add all items of that type.")
-
+        self:Print("To prevent TeleportCloak from restoring currently equipped teleport items after they are used,",
+            "type |cff80ffc0/tc save|r.")
     end
     self:Print("Warnings are",
         self.db.warnings and "|cff19ff19Enabled|r." or "|cffff2020Disabled|r.",
@@ -80,17 +107,6 @@ function TeleportCloak:IsTeleportItem(item)
     end
     return false
 end
-
-local InventorySlots = {
-    INVSLOT_NECK,
-    INVSLOT_FEET,
-    INVSLOT_FINGER1,
-    INVSLOT_FINGER2,
-    INVSLOT_TRINKET1,
-    INVSLOT_TRINKET2,
-    INVSLOT_BACK,
-    INVSLOT_TABARD,
-}
 
 TeleportCloak:SetScript("OnEvent", function(self, event, ...)
     if event == "ADDON_LOADED" then

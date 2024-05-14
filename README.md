@@ -52,6 +52,10 @@ You can also `/tc add <type>` to limit the macro to a specific type. Valid types
 
 Items added with `/tc add` will be reset after each click.
 
+## Prevent Restoration
+
+To prevent TeleportCloak from restoring currently equipped teleport items after they are used, type `/tc save`
+
 ## Contributors
 * [peterwooley](https://github.com/peterwooley)
 * Kanegasi
