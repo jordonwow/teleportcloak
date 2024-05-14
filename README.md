@@ -53,5 +53,6 @@ You can also `/tc add <type>` to limit the macro to a specific type. Valid types
 Items added with `/tc add` will be reset after each click.
 
 ## Contributors
-* [@petewooley](https://github.com/peterwooley)
+* [peterwooley](https://github.com/peterwooley)
 * Kanegasi
+* [Rubio9](https://github.com/Rubio9)
