@@ -1,0 +1,13 @@
+## Interface: 11502, 100207, 40400, 110000
+## Title: TeleportCloak
+## Notes: Saves your currently equipped item when you switch to a teleport item and automatically re-equips it after teleporting.
+## Version: @project-version@
+## Author: Jordon
+## SavedVariablesPerCharacter: TeleportCloakDB
+## IconTexture: Interface\Icons\inv_guild_cloak_alliance_a
+## X-Curse-Project-ID: 81148
+## X-Wago-ID: YK9EWlKL
+## X-WoWI-ID: 26733
+
+Items.lua
+Core.lua
