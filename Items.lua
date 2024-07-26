@@ -42,19 +42,24 @@ Private.Items = {
 		51560, -- Runed Band of the Kirin Tor
 		95050, -- Brassiest Knuckle (Horde)
 		95051, -- Brassiest Knuckle (Alliance)
-		118907, -- Pit Fighter's Punching Ring
+		118907, -- Pit Fighter's Punching Ring (Alliance)
+		118908, -- Pit Fighter's Punching Ring (Horde)
 		142469, -- Violet Seal of the Grand Magus
+		144391, -- Pugilist's Powerful Punching Ring (Alliance)
+		144392, -- Pugilist's Powerful Punching Ring (Horde)
+		166559, -- Commander's Signet of Battle
 		166560, -- Captain's Signet of Command
 		139599, -- Empowered Ring of the Kirin Tor
-        193000, -- Ring-Bound Hourglass
+		193000, -- Ring-Bound Hourglass
 	},
 	[INVTYPE_FEET] = {
 		28585, -- Ruby Slippers
 		50287, -- Boots of the Bay
+		142298, -- Astonishingly Scarlet Slippers
 	},
 	[INVTYPE_NECK] = {
 		32757, -- Blessed Medallion of Karabor
-        189827, -- Cartel Xy's Proof of Initiation
+		189827, -- Cartel Xy's Proof of Initiation
 	},
 	[INVTYPE_TABARD] = {
 		46874, -- Argent Crusader's Tabard
