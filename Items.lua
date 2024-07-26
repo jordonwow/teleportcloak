@@ -46,6 +46,7 @@ Private.Items = {
 		142469, -- Violet Seal of the Grand Magus
 		166560, -- Captain's Signet of Command
 		139599, -- Empowered Ring of the Kirin Tor
+        193000, -- Ring-Bound Hourglass
 	},
 	[INVTYPE_FEET] = {
 		28585, -- Ruby Slippers
@@ -53,6 +54,7 @@ Private.Items = {
 	},
 	[INVTYPE_NECK] = {
 		32757, -- Blessed Medallion of Karabor
+        189827, -- Cartel Xy's Proof of Initiation
 	},
 	[INVTYPE_TABARD] = {
 		46874, -- Argent Crusader's Tabard
