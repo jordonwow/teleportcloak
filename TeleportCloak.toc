@@ -1,4 +1,4 @@
-## Interface: 11506, 40402, 110100
+## Interface: 11506, 40402, 110100, 120000, 120001
 ## Title: TeleportCloak
 ## Notes: Saves your currently equipped item when you switch to a teleport item and automatically re-equips it after teleporting.
 ## Version: @project-version@
